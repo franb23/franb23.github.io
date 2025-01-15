@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'MiFuente';
+  src: url('Tarothequev1.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MiFuente1';
+  src: url('Achemost.otf') format('truetype');
+}
+
+#cardTitle {
+  text-transform: uppercase;
+}
+
+
+.miFuente {
+  font-family: 'MiFuente';
+}
+
+.miFuente1{
+  font-family: 'MiFuente1';
+}
+
+/* Estilos generales */
+body {
+  background-color: #ecd9d9;
+  margin: 0;
+  padding: 0;
+  font-family: 'MiFuente', sans-serif;
+}
+
+/* Contenedor principal */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecd9d9;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.contenedor-carta {
+  width: 90%; /* Fluido en todas las pantallas */
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #2c242c;
+  border-radius: 15px;
+  background-color: #9e8a7a;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Encabezados */
+h1, h2 {
+  color: #000000;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 2em; /* Tamaño ajustable */
+}
+
+/* Párrafos */
+p {
+  color: #000000;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif !important;
+  margin: 0;
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+img:hover {
+  transform: scale(0.95);
+}
+
+/* Botón de regreso */
+.botonPagPrincipal {
+  font-size: 24px;
+  color: #311b1b;
+  text-decoration: none;
+}
+
+.botonPagPrincipal:hover {
+  color: #9c0000;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.5em; /* Reduce el tamaño en tablets y móviles */
+  }
+
+  p {
+    font-size: 1em; /* Ajusta el tamaño del texto */
+  }
+
+  .contenedor-carta {
+    padding: 15px; /* Reduce el espaciado interno */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.2em; /* Tamaño más pequeño en móviles */
+  }
+
+  p {
+    font-size: 0.9em; /* Texto más compacto */
+  }
+
+  .contenedor-carta {
+    padding: 10px; /* Ajusta el padding en pantallas muy pequeñas */
+  }
+
+  .botonPagPrincipal {
+    font-size: 20px; /* Botón más pequeño */
+  }
+}
