@@ -97,20 +97,6 @@ h2.miFuente {
   margin-bottom: 20px;
 }
 
-/* Estilo para el contenedor de la sección "Haz una pregunta" */
-.haz-pregunta-container {
-  display: flex;
-  flex-direction: column; /* Coloca los botones uno debajo del otro */
-  align-items: center; /* Centra los botones en el contenedor */
-  text-align: center; /* Asegura que el texto esté centrado */
-  margin-top: 20px; /* Menos espacio arriba */
-}
-
-/* Espaciado entre los botones */
-.haz-pregunta-container button {
-  margin: 10px 0; /* Separación vertical entre los botones */
-}
-
 /* Estilo para el mensaje de error */
 #errorMessage {
   color: rgb(160, 0, 0);
@@ -185,5 +171,4 @@ img {
 .slider-visible img {
     display: block; /* Muestra las imágenes después de inicializar */
 }
-    
 
