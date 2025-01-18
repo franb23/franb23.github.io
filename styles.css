@@ -21,7 +21,7 @@ main {
   display: flex;
   justify-content: center; /* Centrado horizontal */
   align-items: center; /* Centrado vertical */
-  background-color: #ecd9d9; /* Fondo suave para el área principal */
+  background-color: #f4f4f4 !important; /* Fondo suave para el área principal */
   min-height: 70vh; /* Menos espacio vertical para que el contenedor quede más cerca del centro */
   padding: 10px 0; /* Espaciado vertical reducido */
 }
